@@ -1,0 +1,53 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.body-container {
+    position: fixed;
+    top: 5vh;
+    left: 25vw;
+    width: 50vw;
+    height: 90vh;
+    box-shadow: 0px 2px 6px rgba(255,255,255,0.5);
+}
+
+.chat-container{
+    height: 90%;
+    overflow-y: auto;
+}
+.chat-container div:nth-child(odd){
+    float: left;
+    clear: right;
+    margin-left: 10px;
+}
+.chat-container div:nth-child(even){
+    float: right;
+    clear: left;
+    margin-right: 10px;
+}
+
+.message {
+    
+    background-color: white;
+    max-width: 70%;
+    border-radius: 20px;
+    color: black;
+    padding: 5px 10px;
+    margin-top: 4px;
+}
+#message-input {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 5px 10px;
+    width: 77%;
+}
+
+#send-button {
+    background-color: cornsilk;
+    color: black;
+    padding: 6px 10px;
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+}
